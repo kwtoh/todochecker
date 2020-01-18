@@ -1,3 +1,2 @@
 # ignore generated application
-stage/unit
-stage/todochecker
+stage/*
