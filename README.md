@@ -7,3 +7,8 @@ It will then return you the files indicated in the directory.
 
 - Just run "make" on the directory
 - This will build both the unit tests and the application itself into the folder called stage.
+
+## Run Instructions
+
+- run ./stage/todochecker for simple check
+- run ./stage/todochecker -h for the options to run the todochecker with
