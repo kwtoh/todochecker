@@ -4,6 +4,8 @@
 #include <fstream>
 #include <string>
 #include <cctype>
+#include <algorithm>
+#include <cassert>
 
 namespace Core
 {

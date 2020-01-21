@@ -3,6 +3,11 @@
 ToDoChecker is a console application that checks through your directory for any TODOs indicated. 
 It will then return you the files indicated in the directory.
 
+## Requirements
+
+- Do note that you will need g++-8 for this.
+- Before building, do run g++ -v to check your version.
+
 ## Build Instructions
 
 - Just run "make" on the directory

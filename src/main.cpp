@@ -1,6 +1,7 @@
 #include <iostream>
 #include "argparser.hpp"
 #include "engine.h"
+#include <cassert>
 
 /**
  * Initialize our Argument Parser
