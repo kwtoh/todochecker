@@ -114,7 +114,8 @@ TEST_CASE("Engine Test Lower Case", "[engine]")
     testEngine.execute(found, testPath, testTerm);
 
     REQUIRE(found.size() == 2);
-    REQUIRE(found[1] == currDir + testDir + "/lower.txt");
+    std::string path = testPath + "/lower.txt";
+    REQUIRE(std::find(found.begin(), found.end(), path) != found.end());
 }
 
 // Engine Test Recursive
