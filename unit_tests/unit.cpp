@@ -74,7 +74,6 @@ TEST_CASE("ArgParser Simple Test", "[argparser]")
     // Test ArgParserValue
     ArgParse::ArgParserValues value = parser.getValue("-i");
     REQUIRE(value.m_intValue == 2);
-    REQUIRE(value.m_boolValue == false);
 
     // Test Get Value function
     value = parser.getValue("-b");
