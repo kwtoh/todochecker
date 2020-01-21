@@ -1,4 +1,4 @@
-GCC=g++
+GCC=g++-8
 CXXFLAGS=--std=c++17
 CXXFLAGS_BEHIND=-lstdc++fs
 SRC=src/main.cpp src/engine.cpp

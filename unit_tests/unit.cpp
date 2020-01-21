@@ -1,5 +1,6 @@
 #define CATCH_CONFIG_MAIN 
 #include <filesystem>
+#include <algorithm>
 #include "catch.hpp"
 #include "../src/argparser.hpp"
 #include "../src/engine.h"
@@ -113,7 +114,7 @@ TEST_CASE("Engine Test Lower Case", "[engine]")
     testEngine.execute(found, testPath, testTerm);
 
     REQUIRE(found.size() == 2);
-    REQUIRE(found[0] == currDir + testDir + "/lower.txt");
+    REQUIRE(found[1] == currDir + testDir + "/lower.txt");
 }
 
 // Engine Test Recursive
@@ -131,7 +132,8 @@ TEST_CASE("Engine Test Recursive", "[engine]")
     testEngine.execute(found, testPath, testTerm);
 
     REQUIRE(found.size() == 3);
-    REQUIRE(found[1] == currDir + testDir + "/folder/single.txt");
+    std::string path = testPath + "/folder/single.txt";
+    REQUIRE(std::find(found.begin(), found.end(), path) != found.end());
 }
 
 // Engine Test isSidesSafe
