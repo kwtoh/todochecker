@@ -5,8 +5,14 @@ It will then return you the files indicated in the directory.
 
 ## Requirements
 
+For Ubuntu
 - Do note that you will need g++-8 for this.
 - Before building, do run g++ -v to check your version.
+
+For Mac
+- This is tested on clang11
+- Please replace CC to CC=g++
+- and remove $(CXXFLAGS_BEHIND)
 
 ## Build Instructions
 
