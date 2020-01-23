@@ -5,8 +5,13 @@ It will then return you the files indicated in the directory.
 
 ## Requirements
 
+For Ubuntu
 - Do note that you will need g++-8 for this.
 - Before building, do run g++ -v to check your version.
+
+For Mac Darwin
+- Do note that this was tested on clang11
+- Please run uname to see if the result is Darwin
 
 ## Build Instructions
 
