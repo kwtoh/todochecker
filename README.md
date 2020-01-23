@@ -9,10 +9,9 @@ For Ubuntu
 - Do note that you will need g++-8 for this.
 - Before building, do run g++ -v to check your version.
 
-For Mac
-- This is tested on clang11
-- Please replace CC to CC=g++
-- and remove $(CXXFLAGS_BEHIND)
+For Mac Darwin
+- Do note that this was tested on clang11
+- Please run uname to see if the result is Darwin
 
 ## Build Instructions
 
